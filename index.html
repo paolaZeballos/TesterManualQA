@@ -61,7 +61,7 @@
             <li>
               <a href="#modulo2" class="link" title=" Ir a ejercicios modulo2" 
               >Módulo 2</a> 
-              : Ejercicios de C.
+              : Ejercicios de Casos de pruebas y Trazabilidad
             </li>
             <li><a href="#modulo3" class="link" title=" Ir a ejercicios modulo3"
               >Módulo 3</a>
@@ -246,52 +246,97 @@ Existen 4 niveles de pruebas: unidad, integración, sistema, aceptación, estan 
       </div>
 
       <div id="modulo2" class="module-content" style="display: none">
-        <h1 class="module-title">Consultas en Lenguaje SQL</h1>
+        <h1 class="module-title">Casos de pruebas y Trazabilidad</h1>
         <p class="module-description">
-          Aqui realice la importacion de un archivo CSV, llamado TOP_SPOTIFY, a la base de datos con el nombre BONUS_TRACK.
- para obtener los registros d euna tabla, donde puedo mostrar todo el contenido de la tabla TOP_SPOTIFY mediante la query  "select * from", previamente de haberle indicado que use la Base de Datos que guarda el archivo.
-        </p>
+          Aqui realice  ejercicios de casos de pruebas (Es la
+          unidad de trabajo fundamental del testing y
+          usualmente se define al inicio del proceso de
+          pruebas.) que me permitieran
+          evaluar la funcionalidad de un sistema hipotetico, bajo
+          ciertos datos, contexto y entorno. Para así validar y
+          verificar si se comporta como se espera. 
+          </p>
         <img
           class="module-image"
-          src="img/m2/tabla_spoty.png"
-          alt="captura de imagen query tabla_spoty"
+          src="img/m2/comodiseñarCP.png"
+          alt="imagen como diseñar CP"
         />
         <p class="module-description">
-          Aca les muestro como hacer una consulta donde solo se visualizan algunos campos. En este ejemplo solo en el resultado de la query, se van observan tres columnas ARTISTA, TÍTULO y GÉNERO de la tabla TOP_SPOTIFY.
-   ocultandose las otras dos columnas de la tabla que son AÑO y ID como vimos en el ejercicion anterior donde visualizamos todo el contenido de la tabla.
+          Ahora les muestro como Diseñe dos casos de prueba, uno positivo y otro negativo, especificando desde qué navegador y con qué medio de pago debia probarse, cree una
+          matriz de casos en Excel, para la compra de pasajes
+          en la siguiente página: 
+          <a href="https://www.blazedemo.com." target="_blank" title="Ir a pagina E-commerce">www.blazedemo.com</a>.
           
         </p>
+        <p>Partiendo del concepto de que un Caso de prueba segun ISTQB es un “Conjunto de valores de entrada, precondiciones de
+          ejecución, resultados esperados y postcondiciones de
+          ejecución, desarrollado con un objetivo en particular o
+          condición de prueba, tales como probar un determinado
+          camino de ejecución o para verificar el cumplimiento
+          de un requisito determinado.” 
+        </p>
+      
         <img
         class="module-image"
-        src="img/m2/consulta_algunos_columnas.png"
-        alt="captura de imagen query solo consulta_algunos_columnas"
+        src="img/m2/CPBlazedemo.png"
+        alt=" imagen CP Blazedemo"
       />
       <p class="module-description">
-      Tambien se pueden usar cláusuras como "Order By" para ordenar alfabéticamente el resultado de la consulta, según algún campo/columna. Yo en este caso lo ordene por la columna de los géneros musicales. 
-y  para el caso de aquellos géneros que se repiten, le indique que los subordene de nuevo alfabéticamente, según los nombres de la columna de los artistas.
-       
+      Este es otro ejemplo que realice de un Diseño casos de prueba pero esta vez para la compra de una
+      heladera de Mercado Libre
       </p>
       <img
       class="module-image"
-      src="img/m2/order_by.png"
-      alt="captura de imagen query solo consulta_algunos_columnas"
+      src="img/m2/CPmercadolibre.png"
+      alt="imagen CP mercado libre"
     />
     <p class="module-description">
-      Se pueden hacer consultas que solo muestren un limite de resultados usando la sentencia "limit". En este ejemplo se observan los 10 priemros registros de la tabla.
-      </p>
+      Se pueden hacer Casos de Pruebas según tecnicas, aqui les muestro como diseñe casos positivos y negativos en base a la técnica arbol de decisión, para un depósito de dinero en una
+      cuenta corriente en un cajero automático bancario.(Un árbol de decisiones es una estructura similar a un diagrama de flujo en el que cada nodo interno representa una "prueba" sobre un atributo).
+       </p>
       <img
       class="module-image"
-      src="img/m2/limit.png"
-      alt="captura de imagen query muestra solo 10 resultados"
+      src="img/m2/arbol de decision.png"
+      alt="imagen arbol de decision"
     />
+    <img
+    class="module-image"
+    src="img/m2/CPdepositoBancario.png"
+    alt="imagen CP Deposito bancario"
+  />
     <p class="module-description">
-      Si quisieramos obtener una lista de un campo, que en este caso que les presento serian todas las canciones pertenecientes a la columna género Pop, pero que fueran solo las lanzadas durante el año( otro campo de la tabla) 2011. Y agregar un filtro para mostrar todos los campos de la tabla en el resultado de la consulta, ordenando ademas dicho resultado alfabéticamente según otros campos como por ejemplo, los nombres de los artistas y los nombres de las canciones.
-      se veria asi... </p>
+      Y si quisieramos obtener una lista de casos de prueba, para probar el acceso a la sección de Contribuyente de la
+      AFIP se veria algo asi... </p>
       <img
       class="module-image"
-      src="img/m2/where.png"
-      alt="captura de imagen query muestra solo 10 resultados"
+      src="img/m2/CPafip.png"
+      alt="imagen CP afip"
     />
+
+    <p>
+      Uno de los aspectos más importantes en el
+      diseño de pruebas es el de asegurar que el Tester
+      logra cubrir con sus casos de prueba cada uno de
+      los requerimientos solicitados por el usuario.
+      Esta cobertura suele reflejarse en una matriz de
+      trazabilidad lo cual podrá mostrar si queda
+      algún requerimiento que no esté siendo evaluado
+      por un caso de prueba. Aqui  a continuación les compartire como seria una matriz de trazabilidad segun la planilla de casos de prueba para un login y seleccion de compar de un producto de la pagina www.saucedemo.com
+    </p>
+    <img
+      class="module-image"
+      src="img/m2/matrizTrazabilidad.png"
+      alt="imagen trazabilidad"
+    />
+    <img
+      class="module-image"
+      src="img/m2/CPsagw.png"
+      alt="imagen cP"
+    />
+
+
+
+
       </div>
       <div id="modulo3" class="module-content" style="display: none">
         <h1 class="module-title">Funciones integradas, de agregado y agrupamientos</h1>
