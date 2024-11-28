@@ -321,7 +321,8 @@ Existen 4 niveles de pruebas: unidad, integración, sistema, aceptación, estan 
       Esta cobertura suele reflejarse en una matriz de
       trazabilidad lo cual podrá mostrar si queda
       algún requerimiento que no esté siendo evaluado
-      por un caso de prueba. Aqui  a continuación les compartire como seria una matriz de trazabilidad segun la planilla de casos de prueba para un login y seleccion de compar de un producto de la pagina www.saucedemo.com
+      por un caso de prueba. Aqui  a continuación les compartire como seria una matriz de trazabilidad segun la planilla de casos de prueba para un login y seleccion de compar de un producto de la pagina 
+      <a href="https://www.saucedemo.com." target="_blank" title="Ir a pagina E-commerce">www.saucedemo.com</a>.
     </p>
     <img
       class="module-image"
@@ -339,490 +340,100 @@ Existen 4 niveles de pruebas: unidad, integración, sistema, aceptación, estan 
 
       </div>
       <div id="modulo3" class="module-content" style="display: none">
-        <h1 class="module-title">Funciones integradas, de agregado y agrupamientos</h1>
+        <h1 class="module-title">Bugs</h1>
         
         <p class="module-description">
-          Las funciones en MySQL tienen como finalidad simplificar
-la presentación y la obtención de los resultados
-de las consultas. En este modulo observaremos distintos ejemplos que hice de funciones, empezando por las integradas de texto, en esta imagen de la función "CONCAT()"
-que permite concatenar (unificar) cadenas
-de caracteres (valores de campo) en una sola columna.
+          Luego del diseño de casos de prueba,  viene la ejecución de pruebas.
+          Durante la ejecución se llevarán a cabo cada
+          uno de los casos de prueba que fueron definidos
+          y llega el momento de comparar el resultado
+          esperado vs. el resultado obtenido.Cualquier desviación entre el resultado
+          esperado y el resultado obtenido que ocurra
+          durante la ejecución de un caso de prueba será
+          un bug que deberá ser reportado para su
+          resolución, antes que el sistema llegue al usuario
+          final. 
+          La prueba será Exitosa si el resultado esperado coincide
+          con el obtenido y será Fallida en caso contrario.
         </p>
         <img
         class="module-image"
-        src="img/m3/concat.png"
-        alt="Ejemplo de CONCAT"
+        src="img/m3/bugs1Blaze.png"
+        alt="Ejemplo Bugs Blazedemo"
+      />
+      <img
+        class="module-image"
+        src="img/m3/bugs2Blaze.png"
+        alt="Ejemplo Bugs Blazedemo"
       />
       <p class="module-description">
-        En este ejemplo  se concatena (unifica) en una única columna,
-el campo NOMBRECOMPANIA, junto con los
-valores del campo PAIS de
-la tabla clientes_neptuno, sin dejar espacio entre los mismos.
+        En este ejemplo, registro
+        los defectos encontrados despues de jecutar los casos de prueba  que realice en los ejercicios en el módulo2 para la compra de
+        pasajes del link: https://www.blazedemo.com/
+       
+      </p>
+      <p>
+        Uso planillas de excel con los Atributos de un bug, documentan el ciclo de vida del bugs, tambien sirve para  crea otra planilla de reporte y hacer el seguimeinto del mismo.
+      ● Id: identificador único.
+      ● Descripción: título breve del bug.
+      ● Datos: datos necesarios para ejecutar el CP
+      y obtener el bug.
+      ● Tipo: de software, de datos, de ambiente, de
+      interconexiones, etc.
+      ● Prioridad (severidad): identifica cuál es la
+      importancia del bug.
+      ● Ciclo: etapa en la que fue encontrado
+      ● Status: abierto, en proceso, asignado, resuelto,
+cerrado, anulado.
+● Tester: responsable que encontró el defecto.
+● Evidencia: print-screen, archivo o foto en
+donde se visualiza el bug.
+● Asignado: responsable (desarrollador) que
+resolverá el bug.
       </p>
       <p class="module-description">
-        Otra Función es UPPER() para convertir a mayúsculas el valor de un campo.
-Miremos el siguiente ejemplo, que convierte a mayúsculas los valores
-contenidos en el campo "EMPRESA" de la tabla clientes.
+        Y en el siguiente video les meustro la Matriz o Planilla de bugs como resultado luego de identificar algúnos bug del desarrollo de la pagina www.saucedemo.com. 
+        Quizas te preguntes
+         ¿Cómo hice para identificar los bugs encontrados? ¿En qué base el proceso?...
+        Y te cuento que simplemente ejecute los casos de prueba de login y selección de producto, que te mostre como los diseñe en los ejercicios tambien del módulo2, cuando fui explorando el sistema.
+        Luego para el reporte de bug-defectos, los
+        enumere, (previamente se debe haber chequeado si no fueron ya reportados, si hay un documento donde hacerlo).
+         Y profundice la descripción de los defectos, completando todos los atributos referenciados a la prueba en un documento o planilla. 
+         <ul> Siguiendo las buenas prácticas de : 
+        <li>1. Describir muy claramente la falla que está ocurriendo.</li> 
+        <li>2. incluir los datos que fueron utilizados para reproducirla. </li>
+        <li>3. Si la falla no se reproduce siempre, indicar bajo qué circunstancias se pudo reproducir.</li> 
+        <li>4. Incluir evidencias.</li>
+       <li>5. Indicar el resultado que se espera obtener y el que se obtuvo.</li> </ul>
+         Ejemplo: matriz de bugs Swag Labs (www.saucedemo.com) En la primer imagen esta la mitad de la planilla, que continua en tal cual se visualiza en la imagen posterior de abajo.
+        
  
       </p>
       
       <img
       class="module-image"
-      src="img/m3/upper.png"
-      alt="Ejemplo upper"
+      src="img/m3/bugs1sauce.png"
+      alt="Ejemplo bugs sauce"
+    />
+    <img
+      class="module-image"
+      src="img/m3/bags2sauce.png"
+      alt="Ejemplo bugs sauce"
     />
 
     <p class="module-description">
-       CHAR_LENGTH() Es una función integrada de texto que permite contabilizar la cantidad de
-caracteres que contiene una cadena, e incluye los
-espacios en blanco. En el ejercico de abajo la use para contabilizar la cantidad de caracteres contenidos
-en los valores del campo direccion de la tabla clientes
-y muestra el resultado en una nueva columna llamada
-cantidad de caracteres.
+      
+Por ultimo aqui esta mi desarrollo de una planilla de REPORTE de Bugs en base a la pagina tambien de Sauce pero este bugs pertence al ingreso con un diferente usuario por eso veran que cambia el producto.
 
     </p>
     
     <img
     class="module-image"
-    src="img/m3/CHAR_LENGTH.png"
-    alt="Ejemplo CHAR_LENGTH"
+    src="img/m3/otrobugssauce.png"
+    alt="Ejemplo2 Bugs sauce"
   />
-  <p class="module-description">
-    A continuación, veremos ejercicios con distintas funciones integradas
-de fecha, que ofrece MySQL.
-
- </p>
- 
- <img
- class="module-image"
- src="img/m3/year.png"
- alt="Ejemplo year"
-/>
-<p>
-  Esta función YEAR permite obtener el año de un campo de tipo
-fecha. En el ejemplo anterior, vemos como pude obterner el
-año del campo fecha, de la tabla facturas y asigna a través
-del alias "AS" Año, este nombre a la columna resultante.
-
-</p>
-<img
- class="module-image"
- src="img/m3/curdate.png"
- alt="Ejemplo curdate"
-/>
-<p>
-  Esta imagen anterior, devuelve la fecha actual
-del sistema operativo que estaba usando, en una columna con el nombre
-FECHA ACTUAL. Para esto use la Función CURDATE.
   
-
-</p>
-
-
-<p>
-  La Función TIMESTAMPDIFF permite calcular la cantidad de meses o
-años transcurridos entre 2 fechas.
-El ejemplo que les voy a mostrar a continuación, calcula la cantidad de
-meses transcurridos entre el 01/01/2020 y el 30/06/2024 y
-devuelve el resultado en una columna, con el nombre
-MESES TRANSCURRIDOS siendo un total de 53. 
-
-</p>
-<img
- class="module-image"
- src="img/m3/Función TIMESTAMPDIFF.png"
- alt="Ejemplo TIMESTAMPDIFF"
-/>
-
-<p>
-  También existen funciones integradas 
-  matemáticas en MySQL.Yo use la Función ROUND
-  en este ejercicio para redondear valores
-  numéricos. El ejemplo a la derecha, divide los
-  valores numéricos cargados en el campo precio
-  de la tabla articulos por 3 y redondea el
-  resultado de dicha división a 2 decimales.
-  El segundo argumento debe ser siempre un
-  número entero que indique la cantidad de
-  decimales a obtener. Observen la imagen a continuación...
-  
-
-</p>
-<img
- class="module-image"
- src="img/m3/round.png"
- alt="Ejemplo ROUND"
-/>
-
-<p>
-Función CEIL, devuelve el valor entero mayor al argumento
-especificado.
-En el ejemplo siguiente, yo la use para multiplicar el valor del campo "precio" por
-1.27 (que seria el precio actualizado, suponiendo que necesitamos hacer esta operación) y obtiener el valor entero mayor, en otra columna con
-el nombre Precio redondeado.
-
-</p>
-<img
- class="module-image"
- src="img/m3/ceil.png"
- alt="Ejemplo CEIL"
-/>
-
-
-  <p>
-    Ahora les mostrate mas funciones de SQL, estas nos permiten contar registros,
-    calcular sumas, promedios, obtener valores máximos y
-    mínimos.
-    Por lo que se denominan funciones de agrupamiento
-   debido a que con ellas podemos hacer operaciones sobre conjuntos de registros, en lugar de
-    hacerlo sobre datos individuales; Y tienen la característica de
-    agrupar los resultados en un solo registro de salida.
-
-</p>
-<img
- class="module-image"
- src="img/m3/count.png"
- alt="Ejemplo COUNT"
-/>
-<p>
-Función COUNT, esta función retorna la cantidad de valores
-que contiene un campo especificado.
-Por ejemplo, aca la use para saber la cantidad de
-productos que hay en la tabla Productos. Obtendiendo como resultado que hay 40.
-
-</p>
-
-  
-<p>
-  La sentencia del ejemplo anterior, se puede combinar
-  con la cláusula WHERE. Por ej., si se quiere saber cuántos
-  productos contienen la palabra FERRETERIA, en el campo
-  SECCION, de mi tabla Productos. Haria esta query:
-  <img
-class="module-image"
-src="img/m3/count_where.png"
-alt="Ejemplo count_where"
-/>
-  <p>
-    Y aqui les dejo como es una consulta de la tabla productos con todos sus registros.
-  </p>
-
-</p>
-  <img
-   class="module-image"
-   src="img/m3/tabla_productos.png"
-   alt="Ejemplo tabla_productos"
-  />
-  <p>
-    Y otra cláusula es HAVING que permite hacer selecciones (filtrar)
-    en situaciones en las que no es posible usar la cláusula
-    WHERE, dado que se establece un criterio sobre un valor
-    dado por una función de agrupamiento y no por valores
-    de registros. Ejemplo:
-    
-  </p>
-  <img
-   class="module-image"
-   src="img/m3/having.png"
-   alt="Ejemplo having"
-  />
-
-
-  <p>
-    Si se quiere sumar, en mi caso por ejemplo para saber la cantidad del cod_producto de la tabla Productos.Usando esta funcion "SUM" me retorna la suma de los valores que contiene
-el campo especificado. 
-
-  </p>
-
-</p>
-  <img
-   class="module-image"
-   src="img/m3/sum.png"
-   alt="Ejemplo sum"
-  />
-  <p>
-    Función AVG, esta función retorna el valor promedio de los valores del
-campo especificado. Por ejemplo, para calcular el promedio de todos los
-cod_productos contenidos en la tabla Productos, la instrucción
-SQL a ejecutar fue:
-
-</p>
-<img
-class="module-image"
-src="img/m3/avg.png"
-alt="Ejemplo avg"
-/>
-<p>
-  Función MIN es igual a la anterior, pero calcula el valor mínimo de un campo.
-Por ejemplo, para conocer cuál es el menor cod_producto que
-figura en la tabla Productos, la instrucción SQL que ejecute
-fue la siguiente:
-</p>
-<img
-class="module-image"
-src="img/m3/min.png"
-alt="Ejemplo min"
-/>
- <p> Usando la misma sentencia, pero con la funcion MAX  podemos averiguar el valor máximo de un campo.</p>
- 
- <p>
-  Por ultimo en este modulo conoscamos la cláusula GROUP BY, como su traducción lo indica (agrupar
-  por) tiene como propósito agrupar información de acuerdo
-  a un criterio en común.Y por lo general se utiliza con funciones de agrupación
-  o de agregación como las que les vengo mostrando (COUNT, MIN, MAX, AVG, SUM).
-  En el siguiente ejercicio Supuce que necesitaba calcular la cantidad de
-  cod_productos existentes segun la categoría Origen. Esta la fue la query y su resultado:
-  
- </p>
- <img
-class="module-image"
-src="img/m3/group_by.png"
-alt="Ejemplo group_by"
-/>
-
-      </div>
-      <div id="modulo4" class="module-content" style="display: none">
-        <h1 class="module-title">DDL Create, DML Update, Insert y Delete</h1>
         
-        <p class="module-description">
-          Puedes crear una nueva tabla a partir de una sentencia DML, como
-SELECT para poder duplicar la estructura completa de
-la misma o sólo parte de ella. Asi se genera una copia de una tabla
-existente, incluyendo todos sus registros: </p>
-<img
-class="module-image"
-src="img/m4/copiatodo.png"
-alt="Ejemplo copia toda una tabla"
-/>
-
-<p>
-El ejemplo a continuación, genera una copia de una tabla
-existente, copiando en esta nueva tabla sólo aquellos
-registros de la tabla original que cumplan con una
-determinada condición:
-
-          
-        </p>
-        <img
-          class="module-image"
-          src="img/m4/copiaparcial.png"
-          alt="copia parcial de una tabla"
-        />
-
-        <p class="module-description">
-          Aqui veremos una consulta MDL muy util para cuando se necesita modificar registros de una tabla utilizando la
-          sentencia UPDATE. Yo use la sintaxis genérica del comando
-          UPDATE; y mediante la cláusula WHERE le estableci una
-          condición; de manera tal que , sólo las filas/registros que
-          cumplarian esa condición fueran actualizadas, entonces solo los registro existente donde el pais era Estado Unidos para cambiarlo por USA, de esta manera: 
-        </p>
-        <img
-          class="module-image"
-          src="img/m4/update.png"
-          alt="captura de imagen ejercicio update"
-        />
-        <p class="module-description">
-          Es importante saber que en ocasiones, el motor de base de datos MySQL
-          Workbench bloquea (por defecto) las bases de datos
-          para evitar actualizaciones o eliminaciones involuntarias.
-         
-          
-        </p>
-        <img
-          class="module-image"
-          src="img/m4/desbloq.png"
-          alt="captura de imagen desbloqueo"
-        />
-        <p class="module-description">
-            <p class="module-description">
-            INSERT se usa para hacer consultas de datos anexados, (otra forma de manipulacion de datos)
-              De esta forma pude insertar datos (provenientes de otra
-              tabla) en una tabla. Te mostrare una tabla sin productos suspendidos, luego como con INSER los suspendi.
-         
-          
-        </p>
-        <img
-          class="module-image"
-          src="img/m4/Nosuspendidos.png"
-          alt="captura de imagen tabla original con productos no suspendidos"
-        />
-        <p>
-          Genere una nueva tabla con el nombre
-PRODUCTOS_SUSPENDIDOS a partir de la
-tabla PRODUCTOS_NEPTUNO. La nueva tabla
-contiene 8 productos (registros) igual a la primera. Por lo que puse en
-esta nueva tabla todos los campos de la tabla
-PRODUCTOS_NEPTUNO, pero sólo aquellos
-registros en los que en el campo
-SUSPENDIDO figure la palabra SI. Y asi logre mostrar
-de la tabla PRODUCTOS_SUSPENDIDOS el
-contenido como se ve en la ultima imagen. 
-Pero ante debi ejecutra esta sintaxis:
-
-        </p>
-        <img
-          class="module-image"
-          src="img/m4/insert.png"
-          alt="imagen sintaxis insert"
-        />
-        <p>A partir de este momento, todos los productos provistos por el proveedor 1 pasan a estar
-          suspendidos por tiempo indeterminado</p>
-        <img
-          class="module-image"
-          src="img/m4/Suspendidos.png"
-          alt="imagen tabla modificada"
-        />
-<p>
-  Para eliminar registros de una tabla, se utiliza la
-  sentencia DELETE. Al hacerlo, se deberá especificar la condición que deben cumplir los registros
-  de la tabla a eliminar.
-  En el ejemplo que se muestra a la derecha, se
-  eliminarían de la tabla Productos todas aquellas
-  filas/registros donde el campo idProducto
-  contenga el valor 1.
-  
-</p>
-<img
-class="module-image"
-src="img/m4/delete.png"
-alt="imagen delete"
-/> 
-<p>DELETE se puede utilizar para
-  eliminar todos los registros de una tabla,pero no
-  resetea los valores de los campos
-  AUTO_INCREMENT. Para eso se usa TRUNCATE, ¡te lo muestro luego!</p>
-<img
-class="module-image"
-src="img/m4/resultado delete.png"
-alt="imagen despues de delete"
-/> 
-
-<p>
-  Recuerda que si no especificas ninguna condición a
-  través de una cláusula WHERE, se eliminarán todos
-  los registros de la tabla sin ninguna limitación (es
-  decir, la tabla quedará vacía).
-</p>
-
-<img
-class="module-image"
-src="img/m4/truncate.png"
-alt="imagen truncate"
-/> 
-<p>
-  Como ya te adelante si necesitas optar por vaciar
-completamente la tabla, es recomendable utilizar esta
-sentencia TRUNCATE TABLE, ya que elimina
-los registros en su totalidad y deja totalmente vacía la
-tabla, de manera menos costosa (en términos de
-rendimiento) para el servidor de base de datos. Como te muestro en el ejemplo anterior.
-</p>
-
-
-      </div>
-      <div id="modulo5" class="module-content" style="display: none">
-        <h1 class="module-title">Subconsultas, condicionales y joins</h1>
-        <p> Para aprender hacer una subconsulta, es decir, un
-          SELECT dentro de otra consulta (otro SELECT).
-          Con el objetivo <del></del> obtener un resultado y utilizarlo
-          como criterio de búsqueda para obtener otro, como por ej. un
-          determinado listado de registros.
-          
-          Yo hice el siguiente ejemplo con una subconsulta para
-          conocer todos los registros de la tabla articulos,
-          cuyo valor de campo articuloID, se encuentra en
-          el campo articuloID de la tabla facturas. Les muestro...
-
-          
-  
-        </p>
-        <img
-          class="module-image"
-          src="img/m5/subconsulta.png"
-          alt="imagen subconsulta"
-        />
-        <p class="module-description">
-          Tambien aca les comparto otra subconsulta que apendi denominada ESCALAR. Cuando necesitamos
-ejecutar una subconsulta que devuelva un único resultado
-(como puede ser una suma, un promedio, un
-valor máximo, un valor mínimo, etc.). Haremos algo como el
-ejemplo que le dejo aqui debajo, donde defini una consulta que
-devuelva de la tabla alumnos, a todos aquellos
-alumnos cuya edad supera la edad promedio. Suponiendo
- que no se conoce cuál es la edad promedio
-de todos los alumnos, esta subconsulta calcula
-dicho promedio y la consulta principal toma ese
-resultado como criterio de búsqueda, mostrando
-en pantalla todos los registros de la tabla
-alumnos que cumplan con el criterio establecido.
-        </p>
-
-        <img
-          class="module-image"
-          src="img/m5/subconsulta_escalar.png"
-          alt="imagen subconsulta_escalar"
-        />
-        <p>
-          El condicional CASE permite asignar un valor a
-          una columna tomando como referencia otro
-          valor de la tabla.
-          Por cada valor o grupo de valores existe un
-          WHEN y un THEN; si encuentra un valor
-          coincidente en algún WHEN, ejecuta el THEN
-          correspondiente a ese WHEN; caso contrario,
-          se ejecuta el ELSE.
-          Este condicional se debe cerrar con la palabra
-          END para indicar que el CASE ha finalizado.
-          El ejercicio siguiente Utiliza la tabla CLIENTES_NEPTUNO, de la DB Laboratorio, para generar
-          una consulta que muestre los campos
-          IDCLIENTE, NOMBRECOMPANÍA, CIUDAD y PAÍS. Luego, agregar una columna llamada
-          CONTINENTE, en la que se muestren los
-          valores definidos en las condiciones. Como Plus le agregue la clausura ORDER BY para ordenarlos alfabéticamente
-          
-        </p>
-        <img
-          class="module-image"
-          src="img/m5/case.png"
-          alt="imagen"
-        />
-<p>
-  UNION es una sentencia que se usa para comparar varias consultas, cuando: en cada resultado exista la misma cantidad
-  de campos y los campos a comparar tengan tipos de datos
-  compatibles (no es necesario que tengan el
-  mismo nombre).Aqui les muestro una sintaxis que realice para obtener una lista de todos aquellos
-  productos (a la venta y suspendidos) cuyo
-  precio supere los 80 pesos. La búsqueda se
-  debe llevar a cabo en las tablas
-  PRODUCTOS_NEPTUNO y PRODUCTOS_SUSPENDIDOS (que son iguales, si recuerdan en el modulo de ejercicios 3, las cree a una como copia de la otra).
-  
-</p>
-<img
-          class="module-image"
-          src="img/m5/UNION.png"
-          alt="imagen UNION"
-        />
-<p>
-Anteriormente vimos la comparación de los
-resultados de varias consultas con UNION pero hay que diferenciarlo de  otro tipo de consulta que se puede hacer mediante la combinación
-de datos de varias
-tablas. Y para esta consulta usamos
-el operador JOIN, que establece una relación por
-uno o varios campos de diferentes tablas.
-Por ejemplo para generar un listado en que se muestre el
-campo NOMBRECONTACTO de la tabla
-PROVEEDORES y los campos IDPRODUCTO,
-NOMBREPRODUCTO y PRECIOUNIDAD de
-la tabla PRODUCTOS NEPTUNO la sintaxis seria asi: 
-
-</p>
-<img
-          class="module-image"
-          src="img/m5/join.png"
-          alt="imagen JOIN"
-        />
-
-
-
       </div>
     </main>
   </body>
